@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="lg:sticky top-0">
+       <!-- Navbar1 -->
+        <div class="navbar1 bg-red-100">
+            <nav class="  lg:flex lg:justify-around m-auto w-1/2 lg:w-full space-y-3 mt-4 ">
+               <div> <button class="btn btn-success" id="blog" onclick="blog()">Blog</button></div>
+                <div class="bd flex gap-2">
+                <img src="./assets/logo.png" alt="">
+                <p class="pt-4 ">Donation Bangladesh</p>
+                </div>
+                <div class=" flex">
+                    <img src="./assets/coin.png" alt="">
+                    <div class="mt-4" ><p>BDT <span id="balance">4000</span></p></div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar----2 -->
+         <div class=" lg:flex lg:justify-center gap-4 mt-4 lg:ml-0 ml-20 ">
+            <button class="bg-green-400 p-2 border-solid border-2 border-indigo-600 ">Donation</button>
+            <button class="btn">History</button>
+            
+         </div>
+            
+         </div>
+    </header>
+    <main>
+      
+        <div class="card-container lg:flex  justify-between ">
+              <!-- card started -->
+            <!-- Image-section -->
+            <div class="image-section lg:w-1/3 w-full">
+                <img src="./assets/noakhali.png" alt="" width="">
+            </div>
+            <!-- description Section -->
+            <div class="description-section lg:w-1/2 w-full">
+                <div class="content-container flex mt-4 ">
+                    <img src="./assets/coin.png" alt="">
+                    <p>BDT <span id="donated-balance">1000</span></p>
+                </div>
+                <div class="card-description mt-4">
+                    <h1 class="text-2xl font-bold">Heavy rains trigger new floods in Noakhali</h1>
+                    <p>While floodwaters began receding last week, heavy rain from the ongoing depression since Friday evening has worsened the situation, turning post-flood waterlogging into another flood.
+
+
+                        Most roads and homes are once again submerged, heightening fears among those already affected.
+                        According to Rafiqul Islam, the acting officer of the district’s meteorological office, 124mm of rainfall was recorded in Maizdi over the last 24 hours, as of noon on Saturday.
+                        
+                        </p>
+                </div>
+                
+                   
+                    <div class="input-amount ">
+                        <input class="w-2/3 border-solid border-2 border-blue-800" type="text" name="" id="donation-amount" placeholder=" put your amount">
+                        
+                    </div>
+                    <div>
+                        <button id="donation-btn" class=" bg-red-300 p-2 mt-2 w-2/3">
+                            Donate Now</button>
+<!-- modal -->
+<!-- Modal -->
+<dialog id="my_modal_2" class="modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Thank You!</h3>
+      <p class="py-4">Your donation has been successfully processed.</p>
+      <form method="dialog" class="modal-backdrop">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </dialog>
+
+ <!--  -->
+
+                    </div>
+            </div>
+             
+            </div>
+            <!--card-design-end -->
+        </div>
+
+        <!-- 2 -->
+        <div class="card-container lg:flex  justify-between ">
+            <!-- card started -->
+          <!-- Image-section -->
+          <div class="image-section ">
+              <img src="./assets/feni.png" alt="" class="h-80 mb-4">
+          </div>
+          <!-- description Section -->
+          <div class="description-section lg:w-1/2 w-full">
+              <div class="content-container flex mt-4 ">
+                  <img src="./assets/coin.png" alt="">
+                  <p>BDT <span id="donated-balance2">2000</span></p>
+              </div>
+              <div class="card-description mt-4">
+                  <h1 class="text-2xl">Donation for flood in Bangladesh</h1>
+                  <p>    Most roads and homes are once again submerged, heightening fears among those already affected.
+                    According to Rafiqul Islam, the acting officer of the district’s meteorological office, 124mm of rainfall was recorded in Maizdi over the last 24 hours, as of noon on Saturday.
+                    Most roads and homes are once again submerged, heightening fears among those already affected.
+                </p>
+              </div>
+              
+                 
+                  <div class="input-amount ">
+                      <input class="w-2/3 border-solid border-2 border-blue-800" type="text" name="" id="donation-amount2" placeholder=" put your amount">
+                      
+                  </div>
+                  <div>
+                      <button id="donation-btn2" class=" bg-red-300 p-2 mt-2 w-2/3 ">
+                          Donate Now</button>
+<!-- modal -->
+<!-- Modal -->
+<dialog id="my_modal_1" class="modal2">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Thank You!</h3>
+    <p class="py-4">Your donation has been successfully processed.</p>
+    <form method="dialog" class="modal-backdrop">
+      <button class="btn btn-error">Close</button>
+    </form>
+  </div>
+</dialog>
+
+<!--  -->
+
+                  </div>
+          </div>
+           
+          </div>
+          <!--card-design-end -->
+      </div>
+
+      <!-- 3 -->
+      <div class="card-container lg:flex  justify-between ">
+        <!-- card started -->
+      <!-- Image-section -->
+      <div class="image-section lg:w-1/3 w-full">
+          <img src="./assets/quota-protest.png" alt="" >
+      </div>
+      <!-- description Section -->
+      <div class="description-section lg:w-1/2 w-full">
+          <div class="content-container flex mt-4 ">
+              <img src="./assets/coin.png" alt="">
+              <p>BDT <span id="donated-balance3">3000</span></p>
+          </div>
+          <div class="card-description mt-4">
+              <h1 class="text-2xl">2024 Bangladesh quota reform movement</h1>
+              <p>The 2024 Bangladesh quota reform movement was a series of anti-government[d] and pro-democracy[e] protests in Bangladesh, spearheaded primarily by university students. Initially focused on restructuring quota-based systems for government job recruitment, the movement expanded against what many perceive as an authoritarian government when they carried out the July massacre of protestors and civilians, most of whom were students.[f] Started as a student movement, the movement later escalated into a fully-fledged mass uprising known as the Student–People's uprising.</p>
+          </div>
+          
+             
+              <div class="input-amount ">
+                  <input class="w-2/3 border-solid border-2 border-blue-800" type="text" name="" id="donation-amount3" placeholder=" put your amount">
+                  
+              </div>
+              <div><button id="donation-btn3"
+                 class="bg-red-300 p-2 mt-2 w-2/3">DonateNow</button></div>
+<!-- Modal -->
+<dialog id="my_modal_4" class="modal2">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Thank You!</h3>
+      <p class="py-4">Your donation has been successfully processed.</p>
+      <form method="dialog" class="modal-backdrop">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </dialog>
+  
+  <!-- modal end -->
+                 
+      </div>
+       
+      </div>
+      <!--card-design-end -->
+  </div>
+  
+  
+
+</div>
+    </main>
+    <script src="./utilities.js"></script>
+    <script src="./noakhali.js"></script>
+    <script src="./donation.js"></script>
+    <script src="./quata.js"></script>
+    <script src="./toggle.js"></script>
+ 
+</html>
