@@ -20,5 +20,12 @@ document.getElementById("donation-btn2").addEventListener("click",function(){
     if(typeof donationAmount === "number" && !isNaN(donationAmount)){
 modal.showModal()
     }
-
+// history data
+const historyData=document.createElement("div")
+const historyContainer =document.getElementById("history-container")
+historyData.innerHTML=
+` <P class="text-2xl">${donationAmount} Donation for flood in Bangladesh</P>
+<p>date: ${new Date()}</p>
+`
+historyContainer.appendChild(historyData)
 })

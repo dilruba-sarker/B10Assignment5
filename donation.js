@@ -29,10 +29,20 @@ if (typeof donationAmount === "number" && !isNaN(donationAmount)) {
 }
  
  console.log(donatedCurrentBalance, currentBalance);
+// history data
 
+const historyData=document.createElement("div")
+const historyContainer =document.getElementById("history-container")
+historyData.innerHTML=
+` <P class="text-2xl">${donationAmount} Heavy rains trigger new floods in Noakhali</P>
+<p>date: ${new Date()}</p>
+`
+historyContainer.appendChild(historyData)
+// 
 
 })
 
 function blog(){
     window.location.href = "home.html";
 }
+
